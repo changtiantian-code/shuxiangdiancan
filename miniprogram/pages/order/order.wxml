@@ -1,0 +1,25 @@
+<view class="top">
+      <view class="top_name">图片</view>
+      <view class="top_name">菜品名称</view>
+      <view class="top_name">价格</view>
+   </view>
+<view class="container">
+   <view class="content">
+     <view class="select">
+        <view class="data" wx:for="{{subOrders}}" wx:key="id">
+            <image src="{{item.src}}"></image>
+            <view class="text">{{item.text}}</view>
+            <view class="price">￥{{item.price}}</view>
+        </view>
+      </view>
+    </view>
+    <view class="{{bottomFlag ? 'bottom-bar' :'bottom-bar'}}">
+      <view class="btn"> 
+         <text bindtap="goSelect">重新选择</text>
+      </view>
+      <view class="btn"> 
+         <text bindtap="goRemark">确认订单</text>
+      </view>
+   </view>
+</view>
+

@@ -1,0 +1,11 @@
+<!--pages/user/location/location.wxml-->
+<view>
+<!-- 调用scale方法,小程序对横纵坐标进行缩放 -->
+<!-- markers属性动态初始化 -->
+<!-- bindmarkertap点击标记点时触发 -->
+<!-- bindregionchange视野发生变化时触发 -->
+  <map id="map" longitude="{{longgitude}}" latitude="{{latutude}}" scale="14" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="reginonchange" show-location></map>
+</view>
+<view>
+  <button type="primary" bindtap="navigate">导航</button>
+  </view>

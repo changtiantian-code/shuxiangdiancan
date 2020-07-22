@@ -1,0 +1,22 @@
+<view>
+<view class="top">
+      <image src="/images/definebg.jpg"></image>
+      <view class="time">营业时间：10:00 ---00:00</view>
+      <view class="time">请留下您宝贵的联系方式已便你能快速用餐</view>
+</view>
+<form bindsubmit="res">
+   <view class="content" scroll-y="true">
+     <view class="name">姓名:<input name="name" placeholder="请输入您的姓名"/></view>
+      <view  class="name">手机:<input name="phone" placeholder="请输入您的电话"/></view>
+      <view  class="name">就餐日期:<input name="data" placeholder="请输入您的就餐日期。例如：2020-6-23"/> </view>
+      <view  class="name">时间段:<input name="duration " placeholder="请输入您的就餐时间。例如：12：00-13：00"/></view>
+      <view  class="name">预计到店时间:<input name="time" placeholder="请输入预计到店时间。例如：12：30"/></view>
+      <view  class="name">用餐人数:<input name="peopleNum" placeholder="请输入用餐人数"/></view>
+      <view  class="name">备注信息:<input name="remark" placeholder="请留下您的备注"/></view>
+       <view class="btn">
+        <button  type="primary" bindtap='bindpay'  form-type="submit"> 立刻支付</button>
+      </view>
+    </view>
+    
+</form>
+  </view>

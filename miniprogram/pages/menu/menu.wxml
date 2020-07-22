@@ -1,0 +1,39 @@
+<view>
+<!-- 轮播图开始 -->
+<!-- 轮播图自动播放默认5s改为 interval='3000(3s)' indicator-dots(第几张共几张小点点)  duration（滑动时间）-->
+     <swiper  class='swiper-img' autoplay interval='3000' indicator-dots indicator-color="white" duaration="2000" current="0">
+    <swiper-item  wx:for="{{lunbo}}" wx:key="id">
+      <image src="{{item.src}}"></image>
+    </swiper-item> 
+  </swiper>
+   <!-- 轮播图结束 -->
+   <!-- 内容开始 -->
+   <view class="content">
+    <scroll-view scroll-y="true" style="height: 100%;" scroll-with-animation="ture">
+      <view class="{{orderCount.num==0 ? 'box' : 'box active'}}">
+         <view class="data" wx:for="{{foods}}" wx:key="id">
+            <image src="{{item.src}}"></image>
+            <view class="text">{{item.text}}</view>
+            <view class="price">￥{{item.price}}元</view>
+            <view class="{{item.active ? 'btn active' : 'btn'}}" bindtap="addOrder" data-id="id" data-index="{{index}}">加入购物车</view>        
+          </view>
+      </view>
+     <view class="tian"></view>
+    </scroll-view>
+
+   <!-- 内容结束 -->
+   <!-- 底部栏开始 -->
+   <view class="{{bottomFlag ? 'bottom-bar' :'bottom-bar hidden'}}">
+      <image src="/images/car.gif"></image>
+      <view class="count">
+        <text class="num">{{orderCount.num}}  </text>
+      合计 <text class="sum">  {{orderCount.sum}}  </text> 元
+      </view>
+      <view class="btn"> 
+         <text bindtap="cart">购物车</text>
+      </view>
+   </view>
+   <!-- 底部栏结束 -->
+   </view>
+</view>
+

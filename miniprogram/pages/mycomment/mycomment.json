@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "我的评论",
+  "navigationBarBackgroundColor": "#cc3300",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,60 @@
+
+ .user{
+  width:100%;
+  height:100rpx;
+  /* background-color: aqua; */
+   display: flex;
+  border-bottom: 2rpx solid #ccc;
+} 
+.user .avatar{
+  width:100rpx;
+  height:100rpx;
+  background-color: pink;
+  border-radius:45%;
+}
+.user .nickname{
+  width:100%;
+  height:88rpx;
+  font-size:28rpx;
+  color:black;
+  line-height: 88rpx;
+}
+.user .time{
+  float:right;
+}
+.user .time text{
+  /* line-height: 88rpx; */
+  float:right;
+}
+.updata{
+ border:2rpx solid #ccc;
+  width:100%;
+  height:100rpx;
+   display:flex;
+}
+.updata  image{
+  width:100rpx;
+  height:100rpx;
+  bottom: 0;
+  margin-left:20rpx;
+  display: flex;
+}
+.updata .photo{
+  width:100rpx;
+  height:100rpx;
+  margin-left:10rpx;
+  display: flex;
+}
+form{
+  height:999rpx;
+  /* background-color: pink; */
+  overflow: scroll;
+}
+form input{
+  height:100rpx;
+  /* background-color: yellow; */
+  border: 10rpx solid #ccc;
+  padding-left:20rpx;
+}
+
+

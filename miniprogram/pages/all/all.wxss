@@ -1,0 +1,67 @@
+.user{
+  width:100%;
+  height:88rpx;
+   /* display: flex; */
+  border-bottom: 2rpx solid #ccc;
+  float:right;
+} 
+.user .avatar{
+  width:88rpx;
+  height:88rpx;
+  background-color: pink;
+  border-radius: 66%;
+}
+.user .nickname{
+  width:100%;
+  height:88rpx;
+  font-size:28rpx;
+  color:black;
+  line-height: 88rpx;
+}
+.user .time{
+  float:right;
+}
+.user .time text{
+  float:right;
+}
+.comment{
+  width:100%;
+  height:auto;
+  /* background-color: pink; */
+  /* margin:20rpx 0 10rpx 20rpx; */
+  border:2rpx solid #cc3300;
+  overflow: scroll;
+}
+.comment text{
+  height:66rpx;
+  line-height: 66rpx;
+  display: flex;
+  flex-direction:column; 
+}
+.kong{
+  height:150rpx;
+}
+.bottom-bar{
+  background-color: #cacaca;
+  display:flex;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:140rpx;
+    line-height:140rpx;
+    border-top:2rpx solid #cc3300;
+}
+/* .bottom-bar.hidden{
+  display:none;
+} */
+.bottom-bar button{
+  height:100rpx;
+  width:100%;
+  /* margin:20rpx 20rpx 20rpx 0; */
+  border-radius: 25rpx;
+  color:white ;
+  line-height:100rpx;
+  text-align:center;
+  font-size:32rpx;
+  background-color:#cc3300;
+}

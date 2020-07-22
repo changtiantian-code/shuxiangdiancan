@@ -1,0 +1,39 @@
+  <view class="user">
+      <image name="userImage" class="avatar" src='{{userInfo.avatarUrl}}'></image>
+      <!-- <text name="userName" class="nickname">{{userInfo.nickName}}</text> -->
+      <!-- <view class="time" bindtap="getTime">
+        <text  wx:if="{{time}}">{{time}}</text>
+      </view> -->
+  </view>
+  <view class="comment" wx:for="{{comment}}" wx:key="id">
+                <text>商品评论：{{item.goods}}</text>
+                <text>摆盘评论：{{item.plate}}</text>
+                <text>味道评论：{{item.taste}}</text>
+                <text>食物新鲜程度评论：{{item.freshness}}</text>
+                <text>价格评论：{{item.price}}</text>
+  </view>
+            <view class="comment" wx:for="{{service}}" wx:key="id">
+               <text>环境评价：{{item.environment}}</text>
+               <text>环境卫生情况评价：{{item.sanitation}}</text>
+               <text>传菜评价：{{item.spend}}</text>
+               <text>服务人员热情评价：{{item.enthusiasm}}</text>
+               <text>服务人员表达能力评价：{{item.expression}}</text>
+               <text>服务人员的服务流程的熟悉：{{item.produre}}</text>
+               <text>服务人员服务周到：{{item.thoughtful}}</text>
+            </view>
+            <view class="comment" wx:for="{{complain}}" wx:key="id">
+               <text>味道投诉：{{item.taste}}</text>
+               <text>食品新鲜投诉：{{item.attendant}}</text>
+               <text>服务人员投诉：{{item.fresh}}</text>
+               <text>环境卫生投诉：{{item.sanitation}}</text>
+            </view>
+            <view class="comment" wx:for="{{suggest}}" wx:key="id">
+               <text>味道建议：{{item.taste}}</text>
+               <text>服务人员建议：{{item.attendant}}</text>
+               <text>食物建议：{{item.fresh}}</text>
+               <text>环境卫生建议：{{item.sanitation}}</text>
+            </view>
+    <view class="kong"></view>
+     <view class="{{bottomFlag ? 'bottom-bar' :'bottom-bar hidden'}}">
+         <button bindtap="goMenu">去下单</button>
+   </view>

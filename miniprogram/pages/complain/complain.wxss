@@ -1,0 +1,74 @@
+.container{
+  background-color: #cacaca;
+}
+.scroll-nav{
+  background-color:#ccc;
+  width:100%;
+  height:66rpx;
+  display:flex;
+  white-space:normal;
+  font-size:32rpx;
+  line-height: 66rpx;
+}
+.scroll-nav navigator{
+   font-weight:bold;
+   margin: 0 50rpx  0 200rpx;
+}
+swiper-item{
+  height:100%;
+}
+.swiper-view1,.swiper-view2{
+  width:100%;
+  height:100%;
+}
+.color-red{
+  color:#cc3300;
+}
+.color-black{
+  color:black;
+}
+.swiper-view1 .compl{
+  width:100%;
+  height:200rpx;
+  background-color: #cacaca;
+  border:2rpx solid #cc3300;
+  margin-top:20rpx;
+  border:2rpx solid #cc3300;
+}
+.user{
+  width:100%;
+  height:88rpx;
+  /* background-color: aqua; */
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+}
+.user .avatar{
+  width:100rpx;
+  height:88rpx;
+  background-color: pink;
+  border-radius: 60rpx;
+}
+.user .nickname{
+  font-size:28rpx;
+  color:black;
+  line-height: 88rpx;
+}
+.user .time{
+  float:right;
+  margin-left:100rpx;
+}
+.user .time text{
+  line-height: 88rpx;
+}
+
+.section{
+  margin-top:10rpx;
+  border:2rpx solid #cc3300;
+  width:100%;
+  height:200rpx;
+  line-height: auto;
+  overflow: scroll;
+}
+.section input{
+  border-bottom:2rpx solid #ccc;
+}

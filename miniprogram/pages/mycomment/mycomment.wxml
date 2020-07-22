@@ -1,0 +1,25 @@
+
+    <view class="user">
+      <image name="userImage" class="avatar" src='{{userInfo.avatarUrl}}'></image>
+      <text name="userName" class="nickname">{{userInfo.nickName}}</text>
+      <view class="time" bindtap="getTime">
+        <text  wx:if="{{time}}">{{time}}</text>
+      </view>
+    </view>
+    <form bindsubmit="res">
+      <input maxlength="200" name="comment" placeholder="商品评论:"></input>
+      <input name="Plate" placeholder="摆盘评论:"></input>
+      <input name="taste" placeholder="味道评论:"></input>
+      <input name="freshness" placeholder="食材新鲜程度:"></input>
+      <input name="price" placeholder="价格评价:"></input>
+                         <!-- <view class="updata" >
+                          <image src="../../images/p+.jpg" bindtap="chooseimages"></image>
+                          <view class="photo">
+                           <view wx:for="{{filePath}}" wx:key="id" name="image">
+                              <image  class="album" bindtap="preview" data-id="{{item}}" wx:if="{{item != ''}}" src="{{item}}"></image>
+                           </view>
+                          </view> -->
+                         <!-- </view> -->
+    <button form-type="submit" type="primary" bindtap="goUser">提交</button>
+    </form>                      
+

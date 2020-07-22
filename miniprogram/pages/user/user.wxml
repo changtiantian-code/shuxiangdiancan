@@ -1,0 +1,28 @@
+<view class="continer">
+  <!-- 如果用户没有授权，显示登陆按钮 -->
+  <view class="login" wx:if="{{!isShowUserName}}">
+     <button open-type="getUserInfo" lang="zh_CN" type="primary" bindgetuserinfo="onGotUserInfo">授权登录</button>
+  </view>
+  <view class="own" wx:if="{{isShowUserName}}">
+     <image class="userImage" src="{{userInfo.avatarUrl}}"></image>
+     <text cass="userName">{{userInfo.realname ?userInfo.realname:userInfo.nickName}}</text>     
+  </view>
+  <view class="my">
+      <view class="order" bindtap="goMyorder">我的订单</view>
+      <view class="comment" bindtap="goMycomment">商品评论</view>
+      <view class="service" bindtap="goMyService"><text class="ser">服务</text></view>
+      <view class="bad" bindtap="goMyBad">投诉与建议</view>
+      <view class="all" bindtap="goAll">全部评论</view>
+  </view>
+  <view class="content" scroll-y>
+   <view>
+      <button bindtap="copyText" data-text="{{text}}">本店的WIFI密码</button>
+        <!-- 跳转到另一个页面 -->
+      <button bindtap='goToTalkPage'>本店的地理位置</button>
+      <button  catchtap="callYu">拨打预定电话</button>
+      <button  catchtap="calbad">拨打投诉电话</button>
+  </view>
+  <view>
+  </view>
+  </view>
+</view>

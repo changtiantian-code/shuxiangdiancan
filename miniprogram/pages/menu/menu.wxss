@@ -1,0 +1,130 @@
+/* pages/menu/menu.wxss */
+page{
+  height: 100%;
+  width: 100%;
+  overflow:hidden;
+}
+/* 轮播图开始 */
+.swiper-img{
+  width: 100%;
+  height:350rpx;
+}
+.swiper-img image{
+  width:100%;
+}
+/* 轮播图结束 */
+/* 内容开始 */
+.content{
+ display: flex;
+ position:absolute;
+ width: 100%;
+ height: 100%;
+ background-color:#cacaca;
+}
+.content .box{
+  padding:20rpx 20rpx 10rpx 10rpx;
+  display:block;
+}
+.content .box.active{
+  padding-bottom:200rpx;
+}
+.content .box .data{
+  height:200rpx;
+  background-color: #fff; 
+  margin-bottom: 20rpx;
+}
+.content .box .data image{
+  width:320rpx;
+  height:180rpx;
+  float:left;
+  display: block;
+  margin:10rpx 20rpx 10rpx 20rpx;
+}
+.content .box .data .text{
+   display: block;
+   padding:10rpx 0 0 0;
+   font-size: 32rpx;
+   font-weight: bolder;
+   
+}
+.content .box .data .price{
+  display: block;
+  color:#cc3300;
+  margin-left: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+.content .box .data .btn{
+  line-height:88rpx; 
+  width:200rpx;
+  height: 88rpx;
+  float: right;
+  margin-right: 20rpx;
+  border-radius: 25rpx;
+  text-align: center;
+  color:white;
+  background-color: #cc3300;
+  vertical-align: center;
+}
+.content .box .data .btn.active{
+  background:#cacaca;
+}
+/* .content .box .item  .btn.active{
+  background-color: #cacaca;
+} */
+.content .tian{
+  width:100%;
+  height: 450rpx;
+  background-color: white;
+}
+.bottom-bar{
+  background-color: #cacaca;
+  display:flex;
+    position: fixed;
+    bottom:0;
+    width:100%;
+    height:140rpx;
+    line-height:140rpx;
+    border-top:2rpx solid #cc3300;
+}
+.bottom-bar.hidden{
+  display:none;
+}
+.bottom-bar>view{
+  flex-grow: 1;
+}
+.bottom-bar image{
+  width:120rpx;
+  height:100rpx;
+  margin-top:40rpx;
+  margin-left:20rpx;
+}
+.bottom-bar .count{
+  width:calc(73%-120rpx);
+}
+.bottom-bar .num{
+  border-radius: 100rpx;
+  color:#cc3300;
+  margin-right:20rpx;
+  font-size:32rpx;
+  font-weight: bolder;
+}
+.bottom-bar .sum{
+  margin-left:20rpx;
+   margin-right:20rpx;
+   font-size:32rpx;
+   font-weight: bloder;
+   color:#cc3300;
+
+}
+.bottom-bar .btn{
+  height:100rpx;
+  width:20%;
+  margin:20rpx 20rpx 20rpx 0;
+  border-radius: 25rpx;
+  color:white ;
+  line-height:100rpx;
+  text-align:center;
+  font-size:32rpx;
+  background-color:#cc3300;
+}

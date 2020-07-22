@@ -1,0 +1,46 @@
+<view class="container">
+   <scroll-view scroll-x="true">
+      <view class="scroll-nav">
+          <navigator url="../user/user" data-navindex="0" bindtap="navNews" class="current==0 ? 'color-red' :'color-black'}}">投诉</navigator>
+          <navigator url="../user/user" data-navindex="1" bindtap="navNews" class="current==0 ? 'color-red' :'color-black'}}">建议</navigator>
+      </view>
+   </scroll-view>
+</view>
+   <swiper current="{{currentTab}}">
+       <swiper-item class="swiper-view1">
+             <form bindsubmit="compl">
+                   <view class="section" scroll-y="true">
+                         <view class="user">
+                         <image name="userImage" class="avatar" src='{{userInfo.avatarUrl}}'></image>
+                         <text name="userName" class="nickname">{{userInfo.nickName}}</text>
+                         <view class="time" bindtap="getTime"><text name="time" wx:if="{{time}}">{{time}}</text></view>
+                        </view>
+                        <input name="taste" placeholder="味道投诉"/>
+                        <input name="attendant" placeholder="服务人员投诉"/>
+                        <input name="fresh" placeholder="食物新鲜投诉"/>
+                        <input name="sanitation" placeholder="环境卫生投诉"></input>
+
+                   </view>
+                   <view><button class="complain" form-type="submit" type="warn">提交</button></view>
+              </form>
+       </swiper-item>
+        <swiper-item>
+          <view class="swiper-view2">
+            <form bindsubmit="res">
+                   <view class="section" scroll-y="true">
+                         <view class="user">
+                         <image name="userImage" class="avatar" src='{{userInfo.avatarUrl}}'></image>
+                         <text name="userName" class="nickname">{{userInfo.nickName}}</text>
+                         <view class="time" bindtap="getTime"><text name="time" wx:if="{{time}}">{{time}}</text></view>
+                        </view>
+                         <input name="taste" placeholder="味道建议"/>
+                        <input name="attendant" placeholder="服务人员建议"/>
+                        <input name="fresh" placeholder="食物建议"/>
+                        <input name="sanitation" placeholder="环境卫生建议"></input>
+                   </view>
+                   <view><button form-type="submit" type="primary">提交</button></view>
+            </form>
+          </view>
+       </swiper-item>
+   </swiper>
+

@@ -1,0 +1,66 @@
+.login{
+  width:100%;
+  height: 200rpx;
+  padding-left:20rpx;
+  background-color: #e75b5c;
+  padding-top:100rpx;
+}
+.own{
+  width:100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(195, 101, 101);
+  border-top: 2rpx solid #cc3300;
+}
+.own .userImage{
+     width:128rpx;
+     height:128rpx;
+     border-radius: 128rpx;
+}
+.userName {
+  margin-top:20rpx;
+  font-size:32rpx;
+}
+.my{
+  width:100%;
+  height:200rpx;
+  line-height: 200rpx;
+  display: flex;
+  flex:1;
+}
+.my .order,.my .comment,.my .bad,.my .all{
+   margin:0 20rpx 0 30rpx;
+   font-size:32rpx;
+   font-weight: 800;  
+}
+.my .service .ser{
+   transform: translateY(-20rpx);
+   text-align: center;
+   color:white;
+}
+
+.my .order:hover,.my .comment:hover,.my .bad:hover,.my .service:hover{
+  color:#cc3300;
+}
+
+.content{
+  width:100%;
+  height:100%;
+  /* 让元素沿垂直主轴从上到下垂直排列 */
+  flex-direction:column;
+  background-color: #cacaca;
+  justify-content: center;
+  align-items: center;
+}
+.content view button{
+  width:100%;
+  display: flex; /*设置显示样式**/
+  align-items: center; /**子view垂直居中*/
+  vertical-align: center; /**垂直居中*/
+  justify-content: center; /**内容居中*/
+   margin-top:30rpx;
+  font-weight: 600;
+  background-color:white;
+}

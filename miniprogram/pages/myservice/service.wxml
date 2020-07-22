@@ -1,0 +1,28 @@
+<view class="container">
+   <scroll-view scroll-x="true">
+      <view class="scroll-nav">
+          <!-- <navigator url="../user/user" data-navindex="0" bindtap="navNews" class="current==0 ? 'color-red' :'color-black'}}">服务和环境感受</navigator> -->
+          <navigator url="../user/user"  class="current">服务和环境感受</navigator>
+     </view>
+   </scroll-view>
+</view>
+          <view class="swiper-view2">
+            <form bindsubmit="res">
+                        <view class="user">
+                         <image name="userImage" class="avatar" src='{{userInfo.avatarUrl}}'></image>
+                         <text name="userName" class="nickname">{{userInfo.nickName}}</text>
+                         <view class="time" bindtap="getTime"><text name="time" wx:if="{{time}}">{{time}}</text></view>
+                        </view>
+                   <view class="section" scroll-y="true">
+                     <!-- <input name="serv" placeholder="请您输入对服务人员评价"/> -->
+                     <input name="environment" placeholder="请入您的对环境评价"/> 
+                     <input name="sanitation" placeholder="环境卫生情况作出评价"/>
+                     <input name="spend" placeholder="传菜速度"/>
+                     <input name="enthusiasm" placeholder="服务人员是否热情"/>
+                     <input name="expression" placeholder="服务人员是否表达清楚"/>
+                     <input name="procedure" placeholder="服务人员熟悉服务技能"/>
+                     <input name="position" placeholder="服务人员是否坚守岗位"/>
+                   </view>
+                   <view><button form-type="submit" type="primary">提交</button></view>
+            </form>
+          </view>

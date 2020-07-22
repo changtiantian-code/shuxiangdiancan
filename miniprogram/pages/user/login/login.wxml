@@ -1,0 +1,25 @@
+<!--pages/user/login/login.wxml-->
+<!--pages/user/login/login.wxml-->
+<view class="container">
+ <!--手机号-->
+    <view class="inputUer"> 
+      <image class="user" src="/images/phone.png"></image> 
+      <label>手机号</label> 
+      <!-- value="18829579114 -->
+      <input  placeholder="请输入手机号" bindinput="inputPhone"/> 
+    </view> 
+ <view class="line"></view> 
+  
+ <!--密码-->
+   <view class="inputPwd"> 
+     <image class="user" src="/images/pwd.png"></image> 
+     <label>密码</label> 
+     <!--  value="123456"  -->
+     <input password="true" placeholder="请输入密码" bindinput="inputPwd"/> 
+ </view> 
+  
+ <!--按钮-->
+   <view class="btn"> 
+      <button class="loginBtn" type="primary" form-type="submit">登录</button> 
+   </view> 
+</view>

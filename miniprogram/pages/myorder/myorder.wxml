@@ -1,0 +1,21 @@
+<view class="container">
+   <view class="content">
+     <view class="select">
+        <view class="data" wx:for="{{subOrders}}" wx:key="id">
+            <image src="{{item.src}}"></image>
+            <view class="text">{{item.text}}</view>
+            <view class="price">￥{{item.price}}</view>
+        </view>
+         <!-- <view class="remark" wx:for="{{remark}}" wx:key="id">
+            <view>用户名：{{item.name}};用户电话：{{item.phone}};用餐人数：{{item.peopleNum}}；用餐日期：{{item.data}};时间段：{{item.time}}；就餐时间段：{{item.duration}};备注信息：{{item.remark}}</view>
+          </view> -->
+         <view class="total">
+                <view class="count">
+                  已付款<text class="sum"></text> 
+                </view>
+                <button bindtap="goComtent">去评论</button>
+        </view>
+      </view>
+    </view>
+   <view class="kong"></view> 
+</view>

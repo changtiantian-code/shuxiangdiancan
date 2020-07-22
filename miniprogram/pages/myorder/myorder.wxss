@@ -1,0 +1,122 @@
+/* pages/cart/cart.wxss */
+page{
+  margin-bottom: 200rpx;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: #cacaca;
+  color: #ccc;
+}
+.content{
+  float:left;
+  width:100%;
+  height:100%;
+  overflow: scroll;
+}
+.content .title{
+  margin-top:0rpx;
+  width:100%;
+  height:50rpx;
+  line-height: 50rpx;
+  position: fixed;
+  flex: 0 0 50rpx;
+  top:0;
+  background-color: #eee;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+  font-size: 36rpx;
+  font-weight: bolder;
+  color:black;
+}
+.content .title .photo{
+  padding:10rpx 60rpx 10rpx 40rpx;
+}
+.content .title .name{
+  padding:10rpx 50rpx 10rpx 65rpx;
+}
+.content .title .money{
+  padding:10rpx 50rpx 10rpx 35rpx;
+}
+.content .title .num{
+  padding:10rpx 20rpx 10rpx 60rpx;
+}
+.content .select{
+  height:calc(100% - 10px);
+  padding:10rpx 0 10rpx 10rpx;
+  overflow: scroll;
+  background-color: #eee;
+}
+.content .select .data{
+  height:160rpx;
+  margin-bottom:10rpx;
+  background-color:white;
+  display: flex;
+  flex-direction:row ;
+}
+.content .select .data image{
+  display:block;
+  float:left;
+  height:160rpx;
+  width:160rpx;
+  margin-right:10rpx;
+}
+.content .select .data .text{
+   text-align: center;
+   display: block;
+   font-size: 32rpx;
+   padding-left:30rpx;
+   margin:auto;
+   color:black;
+}
+.content .select .data .price{
+  display:block;
+  font-size:32rpx;
+  color:#cc3300;
+  margin:auto;
+}
+.content .select .remark{
+  width:100%;
+  height:auto;
+  /* background-color: pink; */
+  border:1rpx solid  #cc3300;
+  color:black;
+  font-size: normal;
+}
+/*主容器*/
+.total{
+  display:flex;
+  width:100%;
+  height:100rpx;
+  line-height:100rpx;
+  background-color: white;
+ color:black;
+}
+.total>view{
+  flex-grow: 1;
+}
+.total .count{
+   margin-left:20rpx;
+}
+.total .sum{
+  height:80rpx;
+  width:auto;
+  line-height: 80rpx;
+}
+.total button{
+  float:right;
+  width:300rpx;
+  height:80rpx;
+  /* line-height:80rpx; */
+  text-align: center;
+  font-size: 32rpx;
+  border-radius: 30rpx;
+  color:#cc3300;
+  border:2rpx solid #cc3300;
+  margin: 10rpx 20rpx 0 10rpx;
+}
+.total button:hover{
+  background-color: #cc3300;
+  color:white;
+}
